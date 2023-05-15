@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --orange-shade: #f58220;
+  --black: #000000;
+  --darg-gray: #434343;
+  --white: #ffffff;
+  --off-white: #f8f8f8;
+  --bright-orange: #fff1d7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+header {
+  height: 70px;
+}
+
+main {
+  flex: 1;
+  min-height: calc(100vh - 70px - 70px);
+}
+
+footer {
+  height: 70px;
+}
+
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+li,
+a,
+button,
+textarea,
+input {
+  font-family: 'Alegreya Sans', sans-serif;
+}
