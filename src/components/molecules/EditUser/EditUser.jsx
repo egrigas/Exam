@@ -4,7 +4,6 @@ import Input from '../../atoms/Input/Input';
 import Button from '../../atoms/Button/Button';
 
 const EditUser = ({ user, handleUpdate }) => {
-
   // Sets the values to show when update button is pressed
   const [formData, setFormData] = useState({
     name: user.name,
@@ -24,7 +23,10 @@ const EditUser = ({ user, handleUpdate }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.put(`http://localhost:5000/api/users/${user._id}`, formData);
+      const response = await axios.put(
+        `http://localhost:5000/api/users/${user._id}`,
+        formData
+      );
       if (response.status === 200) {
         console.log('User updated:', response.data);
         handleUpdate({ ...formData, _id: user._id });
@@ -37,37 +39,37 @@ const EditUser = ({ user, handleUpdate }) => {
   return (
     <form onSubmit={handleSubmit}>
       <Input
-        type="text"
-        name="name"
+        type='text'
+        name='name'
         value={formData.name}
         onChange={handleChange}
-        placeholder="Name"
+        placeholder='Name'
         required
       />
       <Input
-        type="text"
-        name="surname"
+        type='text'
+        name='surname'
         value={formData.surname}
         onChange={handleChange}
-        placeholder="Surname"
+        placeholder='Surname'
       />
       <Input
-        type="email"
-        name="email"
+        type='email'
+        name='email'
         value={formData.email}
         onChange={handleChange}
-        placeholder="Email"
+        placeholder='Email'
         required
       />
       <Input
-        type="number"
-        name="age"
+        type='number'
+        name='age'
         value={formData.age}
         onChange={handleChange}
-        placeholder="Age"
+        placeholder='Age'
         required
       />
-      <Button text="Save Changes" />
+      <Button text='Save' />
     </form>
   );
 };

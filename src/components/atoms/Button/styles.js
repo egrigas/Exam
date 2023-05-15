@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const StyledButton = styled.button`
   cursor: pointer;
-  width: 200px;
+  width: 15rem;
   align-self: center;
   border-width: 1px;
   border-style: none;

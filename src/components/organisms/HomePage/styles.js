@@ -7,7 +7,7 @@ export const StyledHomePage = styled.main`
   flex-direction: column;
   justify-content: center;
   gap: 30px;
-  background-color: var(--off-white);
+  background-color: var(--dark-gray);
   margin: 0 auto;
 
   @media screen and (min-width: 1000px) {

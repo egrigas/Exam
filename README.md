@@ -39,7 +39,7 @@ Navigate to the project directory
 Install the dependencies: npm install
 Update your MONGODB_URL
 Start the server: npm start
-Open your web browser and visit: http://localhost:3000
+Open your web browser and visit: http://localhost:5173
 
 # Usage
 
